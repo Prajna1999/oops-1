@@ -34,6 +34,27 @@ class Car{
     return this.#isRunning;
   }
 }
+class Sedan extends Car{
+  #type="Sedan";
+
+  constructor(name,color,maxSpeed, horsepower){
+    super(name,color,maxSpeed,horsePower);
+  }
+  get type(){
+    return this.#type;
+  }
+  
+}
+
+class Hatchback extends Car{
+  #type="Hatchback";
+ constructor(name,color,maxSpeed, horsePower){
+    super(name,color,maxSpeed,horsePower);
+ }
+  get type(){
+    return this.#type;
+  }
+}
 const audi=new Car("Audi", "red", 89, 750);
 audi.drive();
 audi.stop();
